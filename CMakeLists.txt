@@ -4,11 +4,6 @@ project(cpp
   DESCRIPTION "cpp template project"
   LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 17)
-
-find_package(Boost REQUIRED)
+set(CMAKE_CXX_STANDARD 20)
 
 add_executable(main main.cpp)
-target_link_libraries(main Boost::headers)
-install(TARGETS main
-  RUNTIME DESTINATION bin)
